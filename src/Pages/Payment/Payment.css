@@ -1,5 +1,11 @@
 .payment{
-    margin-top: -22px;
+  
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    flex-direction: column;
 }
 
 .container >h1{
