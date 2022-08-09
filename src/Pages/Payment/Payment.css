@@ -1,0 +1,63 @@
+.payment{
+    margin-top: -22px;
+}
+
+.container >h1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.deliveryaddress{
+    display: flex;
+}
+.checkoutlink{
+    text-decoration: none;
+    color: red;
+}
+
+.deliveryaddress{
+    display: flex;
+    margin: 0px 20px;
+    border-bottom: 1px solid black;
+    padding: 20px;
+}
+.title{
+    font-weight: 700;
+    font-size: 20px;
+    flex: 0.1;
+}
+.reviewitems{
+    display: flex;
+    margin: 0px 20px;
+    border-bottom: 1px solid black;
+    padding: 20px;
+}
+.address{
+    flex: 0.2;
+    font-size: 18px;
+    margin-top: -16px;
+    margin-left: 10px;
+}
+.buyingitems{
+    flex: 0.8;
+}
+
+.paymentmethod{
+    flex: 0.3;
+    margin-left: 20px;
+}
+
+.buynowbtn{
+    width: 100px;
+    height: 28px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: rgb(216, 216, 107);
+    background-color: black;
+}
+
+.buynowbtn :active{
+    background-color: rgb(211, 201, 50);
+    color: black;
+}

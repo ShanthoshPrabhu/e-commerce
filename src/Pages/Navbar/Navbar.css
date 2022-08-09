@@ -1,0 +1,33 @@
+.link {
+  text-decoration: none;
+}
+
+.logo{
+  text-decoration: none;
+}
+
+.cartvalue{
+  display: flex;
+  padding-left: 5px;
+  align-items: center;
+  justify-content: center;
+  padding-top:4px;
+  font-size: medium;
+  
+}
+
+.oc{
+  text-decoration: none;
+  color: white;
+}
+
+.cartlogo{
+  color: rgb(126, 202, 314);
+  font-size: 22px;
+}
+
+/* @media only screen and (max-width:380px){
+   .navcontainer{
+    background-color: green;
+   }
+} */

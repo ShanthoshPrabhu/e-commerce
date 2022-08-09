@@ -1,0 +1,24 @@
+.homeproducts{
+    
+   margin-bottom: 80px;
+   justify-content: center;
+   
+   width: 1514px;
+     
+   min-width: 250px;;
+    
+    height: 1210px;
+    margin-top: 60px;
+    
+}
+.homeproducts_row{
+    margin-left:10px ;
+    display: flex;
+    padding-top: 18px;
+    flex: 1;
+    padding-right: 16px;
+    max-height: 560px;
+    min-height: 560px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}

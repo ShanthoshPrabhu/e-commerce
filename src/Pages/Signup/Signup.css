@@ -1,0 +1,77 @@
+.signup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 745px;
+    padding-bottom: 50px;
+}
+.signupcontainer{
+    width: 340px;
+    height: 400px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid rgb(230, 71, 71);
+    border-radius:5px ;
+    height: fit-content;
+    padding-left: 10px;
+    
+}
+.signup_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 140px;
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom:15px;
+    color:rgb(126, 202, 314);
+    font-family: 'Dancing Script', cursive;
+}
+
+.signupcontainer >h2{
+   font-weight: 700;
+   font-size: 30px;
+   margin-bottom: 20px;
+   margin-top: -6px;
+}
+.signupcontainer >form > h4{
+  margin-bottom:5px ;
+  font-size: 16px;
+}
+.signupcontainer >form > input{
+    width: 320px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid ;
+    margin-right: 10px;
+    padding-left: 10px;
+    font-size:18px;
+}
+.terms{
+    margin-top: 15px;
+    font-size: 14px;
+}
+.signupbutton{
+    width: 90%;
+    background-color: rgb(240, 126, 65);
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    margin-left:20px ;
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loglink{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    padding-left: 5px;
+}

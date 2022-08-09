@@ -1,0 +1,10 @@
+.cart{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.cart_left{
+    margin-left: 10px;
+    width: 1050px;
+}
