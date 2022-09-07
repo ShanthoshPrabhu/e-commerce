@@ -7,7 +7,7 @@ import styled from 'styled-components'
  import { auth } from '../Firebase';
 import './Navbar.css'
 import { useStateValue } from '../Stateprovider';
-import {mobile} from '../../Responsive'
+import {mobile} from '../../../src/Responsive'
 
 const Container = styled.div`
   height: 80px;
@@ -15,11 +15,13 @@ const Container = styled.div`
   color:white;
   width: 1514px;
   ${mobile({
-     height:'100px',
-     width:'950px',
+     height:'80px',
+     width:'260px',
      justifyContent: "center",
      alignItems:'center',
-     paddingBottom:'20px'
+     paddingBottom:'20px',
+    //  display:'flex',
+    //  flexDirection:'column'
   })}
 
 `
@@ -36,10 +38,9 @@ const Input= styled.input`
   outline: none;
   font-size: 16px;
   ${mobile({ 
-    fontSize:'25px',
-    position:'relative',
-    width:'40px',
-    backgroundColor:'orange'
+    display:'flex',
+    fontSize:'1px',
+    width:'20px',
   })}
 `
 
@@ -49,10 +50,11 @@ const Left = styled.div`
   align-items:center;
   justify-content: center;
   ${mobile({
-      width:'300px',
+      width:'120px',
       justifyContent: "center",
       position:'relative',
-      right:'30px'
+      right:'30px',
+      top:'8px'
      })}
 `
 const Middle = styled.div`
@@ -90,9 +92,10 @@ const Searchcontainer=styled.div`
    min-width: 200px;
    margin-bottom: 6px;
    ${mobile({ 
-    position:'relative',
-      backgroundColor:'green',
-      width:'100px'
+      position:'relative',
+      height:'0px',
+      top:'10px',
+      left:'40px'
   })}
 `
 
@@ -106,12 +109,14 @@ const Logo=styled.h1`
    margin-top:12px;
    min-width: 420px;
    ${mobile({ 
-    fontSize: "40px",
+    fontSize: "26px",
     display:'flex',
     justifyContent: "center" ,
     alignItems:'center',
     position:'relative',
-    right:'70px',
+    right:'325px',
+    bottom:'24px',
+    // paddingBottom:'10px'
      })}
 `
 const Items=styled.div`
@@ -124,7 +129,8 @@ const Items=styled.div`
    position: relative;
    ${mobile({ 
     position:'relative',
-      right:'150px'
+      right:'400px',
+      fontSize:'12px'
     })}
 `
 const Login=styled.button`
@@ -141,7 +147,11 @@ const Login=styled.button`
     display:'flex',
     alignItems:'center',
     justifyContent: "center" ,
-    marginTop:'24px'
+    marginTop:'24px',
+    textDecoration:'none',
+    position:'relative',
+    fontSize:'14px',
+    bottom:'30px'
   })}
 `
 const Signup=styled.button`
@@ -153,6 +163,15 @@ const Signup=styled.button`
    margin-top:5px;
    border: none;
    margin: none;
+   ${mobile({ 
+    display:'flex',
+    position:'relative',
+    fontSize:'14px',
+    bottom:'54px',
+    left:'60px',
+    textDecoration:'none',
+    color:'red'
+  })}
 `
 
 const Cartcoloumn=styled.button`
@@ -165,21 +184,28 @@ const Cartcoloumn=styled.button`
   border: none;
   margin: none;
   ${mobile({ 
-    
+    position:'relative',
+    fontSize:'8px',
+    right:'64px',
+    top:'14px'
     })}
 `
 
 const Text=styled.div`
    font-size:18px; 
    margin-top:2px;
-   
+   ${mobile({ 
+    display:'none'
+    })}
 `
 const Orderscoloumn=styled.div`
    font-size:18px; 
    margin-top:2px;
    padding-left: 15px;
    ${mobile({ 
-    
+    position:'relative',
+    fontSize:'14px',
+
   })}
 `
 
@@ -201,8 +227,8 @@ function Navbar () {
     < Container className='navcontainer'>
      < Wrapper>
         <Left>
-          <Searchcontainer >
-            <Input></Input>
+          <Searchcontainer className='sc'>
+            <Input className='sinput'></Input>
             <div onClick={finay}><Search ></Search></div>
             
           </Searchcontainer>
@@ -214,14 +240,17 @@ function Navbar () {
         </Middle>
         <Right>
         <Items>
-           <Link to={!user && '/login'}>
+           <Link to={!user && '/login'} className='link'>
               <Login onClick={handlelogin}>{user ? 'Log out' : 'Log in'}</Login>
            
-              <Signup>{user ? '' : 'Sign in'}</Signup>
+              <Signup>{user ? '' : 'Sign up'}</Signup>
             </Link>
             <Link to="/Cartz" className='link'>
              <Cartcoloumn >
-              <ShoppingCartOutlined  className='cartlogo' />
+              <div className='cartlogo'>
+              <ShoppingCartOutlined   />
+              </div>
+              
               <Text>Cart </Text>
                <div className='cartvalue'>{basket?.length}</div>
             </Cartcoloumn>

@@ -28,35 +28,9 @@ useEffect(()=>{
    
   const getclientsecret = async() => {
     
-    //  setclientsecrent(response.data.clientsecret)
-
-  //   const response = await axios.post("/payments/create", {method: "post", url:`/payments/create?total=${basketTotal(basket)*100}` })
-  //   .then(response => { 
-  //     console.log(response)
-  //     setclientsecrent(response.data.clientsecret)
-  // })
-  // .catch(error => {
-  //     console.log(error.response)
-  // })
-
-
-  //   axios.post(`http://localhost:5001/e-commerce-13170/us-central1/api/payments/create?total=${basketTotal(basket)*100}` )
-  //    .then(response => { 
-  //      console.log('hii',response)
-  //      setclientsecrent(response.data.clientsecret)
-  //  })
-  //  .catch(error => {
-  //      console.log(error.response)
-  //  })
-
-
-  // const response = await axios.post(`http://localhost:5001/e-commerce-13170/us-central1/api/payments/create?total=${basketTotal(basket)*100}` )
-  // console.log(response)
-  // setclientsecrent(response.data.clientsecret)
-
    const response= await axios({
      method:'post',
-     url:`http://localhost:5001/e-commerce-13170/us-central1/api/payments/create?total=${basketTotal(basket)*100}`
+     url:`http://localhost:5001/e-commerce-852b8/us-central1/api/payments/create?total=${basketTotal(basket)*100}`
    })  ;
 
    setclientsecrent(response.data.clientsecret)
@@ -73,11 +47,6 @@ console.log('secrettt',clientsecret)
     setprocessing(true);
 
      stripe.confirmCardPayment(clientsecret,{
-
-      
-        // "description":"hii this is raghav",
-        // "currency":"inr",
-      
         payment_method:{
             card:elements.getElement(CardElement)}
     })

@@ -26,8 +26,24 @@
   font-size: 22px;
 }
 
-/* @media only screen and (max-width:380px){
-   .navcontainer{
-    background-color: green;
+@media only screen and (max-width:380px){
+   .cartvalue{
+    font-size: 12px;
+    position: relative;
+    bottom: 8px;
+    right: 5px;
    }
-} */
+   .cartlogo{
+    font-size: 0px;
+   }
+   .link{
+    text-decoration: none;
+   }
+   .sinput{
+    width:200px ;
+   }
+   .oc{
+    position: relative;
+    right: 82px;top: 15px;
+   }
+}

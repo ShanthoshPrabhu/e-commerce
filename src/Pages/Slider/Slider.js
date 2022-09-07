@@ -4,6 +4,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { useState } from "react"
 import styled from "styled-components"
 import {Sliderinfo} from './Sliderinfo'
+import {mobile} from '../../../src/Responsive'
 
 
 
@@ -14,6 +15,9 @@ const Slidercontainer =styled.div`
     display: flex;
     //background-color: orange;
     overflow: hidden;
+    ${mobile({ 
+      height:'200px',
+    })}
 `
 const Arrow=styled.div`
     width: 50px;
@@ -36,6 +40,9 @@ const Arrow=styled.div`
     &:hover{
     width: 54px;
     height: 124px;
+    ${mobile({ 
+      
+    })}
 }
 `
 const Wrapperslider=styled.div`
@@ -43,6 +50,9 @@ const Wrapperslider=styled.div`
    display: flex;
    transition: 1s ease;
    transform: translateX(${(props) => props.slideindex*-1514}px);
+   ${mobile({ 
+      
+    })}
 `
 const Slide = styled.div`
   display: flex;
@@ -50,12 +60,20 @@ const Slide = styled.div`
   height: 500px;
   background-color: ${props => props.bg};
   width: 1520px;
+  ${mobile({ 
+      
+    })}
 `
 const Imgcontainer=styled.div`
    flex: 1;
    height: 80%;
    width: 1000px;
-   
+   ${mobile({ 
+       position:'relative',
+       right:'160px',
+       width:'50px',
+       backgroundColor:'green'
+    })}
 `
 const Image = styled.img`
   position: relative;
@@ -64,6 +82,11 @@ const Image = styled.img`
   left:200px;
   max-width: 100%;
   margin-bottom: -30px;
+  ${mobile({ 
+      width:'200px',
+      height:'120px',
+     
+    })}
   //border-radius10px;
   //mask-image: linear-gradient( to bottom,black , transparent);
  `
@@ -78,17 +101,27 @@ const Info= styled.div`
   min-width: 20em;
   font-size: 16px;
   color: ${props => props.color};
+  ${mobile({ 
+      
+    })}
 `
 const Title=styled.div`
   font-weight:600;
   font-size:30px;
   color: rgb(206, 126, 37);
+  ${mobile({ 
+      position:'relative',
+       right:'360px',
+    })}
 `
 
 const Imgcontent=styled.div`
    font-size: 24px;
    margin-right: 35px;
    margin-bottom: -50px;
+   ${mobile({ 
+      
+    })}
 `
 
    //background-color:rgb(214,214,214);

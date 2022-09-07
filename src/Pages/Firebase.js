@@ -6,14 +6,14 @@ import 'firebase/compat/auth';
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyD7A4NHDxt3lzPxkGyIC17EA9R-tnnWOUg",
-    authDomain: "e-commerce-13170.firebaseapp.com",
-    projectId: "e-commerce-13170",
-    storageBucket: "e-commerce-13170.appspot.com",
-    messagingSenderId: "811279769815",
-    appId: "1:811279769815:web:ee644a1a59f4e99bb95092",
-    measurementId: "G-BZG54H98JL"
-  };
+  apiKey: "AIzaSyDcv4cNFjNVqgID6CKklfX0bprMdyf-iLc",
+  authDomain: "e-commerce-852b8.firebaseapp.com",
+  projectId: "e-commerce-852b8",
+  storageBucket: "e-commerce-852b8.appspot.com",
+  messagingSenderId: "1038082044856",
+  appId: "1:1038082044856:web:5f68f7e6c76f0c5710154d",
+  measurementId: "G-DLBLC3B73G"
+};
 
   const firebaseapp = firebase.initializeApp(firebaseConfig);
 
