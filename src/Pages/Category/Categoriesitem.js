@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import React from 'react'
+import "./Categoriesitem.css"
 
 const Imageci=styled.img`
  width: 100%;
@@ -34,10 +35,10 @@ const Containerci=styled.div`
 
 export function Categoriesitem  ({item})  {
   return (
-  <Containerci >
-       <Imageci src={item.img}/>
-       <Infoci>
-         <Titleci>{item.title}</Titleci>
+  <Containerci className="containerci">
+       <Imageci src={item.img} className='imageci'/>
+       <Infoci className="infoci">
+         <Titleci className="titleci">{item.title}</Titleci>
        </Infoci>
   </Containerci>
   )

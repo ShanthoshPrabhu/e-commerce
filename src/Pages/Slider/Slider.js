@@ -13,9 +13,10 @@ const Slidercontainer =styled.div`
       width: 1514px;
     height: 400px;
     display: flex;
-    //background-color: orange;
+    /* background-color: orange; */
     overflow: hidden;
     ${mobile({ 
+      width:'360px',
       height:'200px',
     })}
 `
@@ -40,10 +41,15 @@ const Arrow=styled.div`
     &:hover{
     width: 54px;
     height: 124px;
-    ${mobile({ 
-      
-    })}
+    
 }
+${mobile({ 
+      position:'absolute',
+      top:'68px',
+      width:'30px',
+      height:'80px',
+      borderRadius:'3px'
+    })}
 `
 const Wrapperslider=styled.div`
    height: 100%;
@@ -51,7 +57,9 @@ const Wrapperslider=styled.div`
    transition: 1s ease;
    transform: translateX(${(props) => props.slideindex*-1514}px);
    ${mobile({ 
-      
+    transition: '1s ease',
+    //  transform: "translateX(${(props) => props.slideindex*-360}px)",
+      // display:'flex'
     })}
 `
 const Slide = styled.div`
@@ -61,7 +69,12 @@ const Slide = styled.div`
   background-color: ${props => props.bg};
   width: 1520px;
   ${mobile({ 
-      
+      position:'relative',
+      width:'360px',
+      height:'200px',
+      top:'45px',
+      right:'20px',
+    
     })}
 `
 const Imgcontainer=styled.div`
@@ -71,8 +84,8 @@ const Imgcontainer=styled.div`
    ${mobile({ 
        position:'relative',
        right:'160px',
-       width:'50px',
-       backgroundColor:'green'
+       width:'200px',
+       
     })}
 `
 const Image = styled.img`
@@ -84,7 +97,7 @@ const Image = styled.img`
   margin-bottom: -30px;
   ${mobile({ 
       width:'200px',
-      height:'120px',
+      height:'100px',
      
     })}
   //border-radius10px;
@@ -98,11 +111,15 @@ const Info= styled.div`
   text-align: center;
   margin-bottom: 13em;
   max-width: 29em;
-  min-width: 20em;
+  
   font-size: 16px;
   color: ${props => props.color};
   ${mobile({ 
-      
+     position:'relative',
+      left:'18px',
+      //  color:'red',
+       top:'50px',
+       maxWidth:'160px'
     })}
 `
 const Title=styled.div`
@@ -111,7 +128,8 @@ const Title=styled.div`
   color: rgb(206, 126, 37);
   ${mobile({ 
       position:'relative',
-       right:'360px',
+       fontSize:'12px',
+       right:'8px'
     })}
 `
 
@@ -120,7 +138,7 @@ const Imgcontent=styled.div`
    margin-right: 35px;
    margin-bottom: -50px;
    ${mobile({ 
-      
+       fontSize:'12px'
     })}
 `
 
@@ -147,7 +165,7 @@ function Slider() {
         <ArrowBackIosNewIcon/>
       </Arrow>
       
-      <Wrapperslider slideindex={slideindex}>
+      <Wrapperslider slideindex={slideindex} className='wrapslider'>
        {Sliderinfo.map((item) => (
         
         <Slide bg={item.bg} key={item.id}>

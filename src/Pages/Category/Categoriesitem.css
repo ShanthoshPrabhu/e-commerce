@@ -1,0 +1,17 @@
+@media only screen and (max-width: 380px){
+    .containerci{
+      display: flex;
+      align-items: center;
+      max-height: 300px;
+      padding-bottom:10px ;
+    }
+    .imageci{
+        max-height: 240px;
+        width: 240px;
+        
+    }
+    .titleci{
+        position: relative;
+        top: 80px;
+    }
+}

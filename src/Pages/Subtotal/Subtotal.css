@@ -45,3 +45,20 @@
 .subtotal >p{
     padding-top: -20px;
 }
+@media only screen and (max-width: 380px){
+    .subtotal{
+        width: 300px;
+        position: absolute;
+        left: 5px;
+       height: 70px;
+       top:130px;
+    }
+    .subtotal >p{
+        font-size: medium;
+        position: relative;
+        left: 20px;
+    }
+    .subtotal >button{
+        margin-bottom: 0;
+    }
+}

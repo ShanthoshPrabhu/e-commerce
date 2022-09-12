@@ -16,12 +16,10 @@ const Container = styled.div`
   width: 1514px;
   ${mobile({
      height:'80px',
-     width:'260px',
+     width:'360px',
      justifyContent: "center",
      alignItems:'center',
      paddingBottom:'20px',
-    //  display:'flex',
-    //  flexDirection:'column'
   })}
 
 `
@@ -30,6 +28,10 @@ const Wrapper = styled.div`
      padding:0px 30px 70px 70px ;
      display: flex;
      
+     ${mobile({
+       position:'relative',
+       right:'20px'
+     })}
 `
 const Input= styled.input`
   flex: 1;
@@ -116,6 +118,7 @@ const Logo=styled.h1`
     position:'relative',
     right:'325px',
     bottom:'24px',
+    color:'red'
     // paddingBottom:'10px'
      })}
 `
@@ -150,8 +153,8 @@ const Login=styled.button`
     marginTop:'24px',
     textDecoration:'none',
     position:'relative',
-    fontSize:'14px',
-    bottom:'30px'
+    fontSize:'13px',
+    bottom:'20px'
   })}
 `
 const Signup=styled.button`
@@ -167,7 +170,7 @@ const Signup=styled.button`
     display:'flex',
     position:'relative',
     fontSize:'14px',
-    bottom:'54px',
+    bottom:'44px',
     left:'60px',
     textDecoration:'none',
     color:'red'
