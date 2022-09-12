@@ -44,6 +44,7 @@ const Arrow=styled.div`
     
 }
 ${mobile({ 
+  display:'none',
       position:'absolute',
       top:'68px',
       width:'30px',

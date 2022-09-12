@@ -121,7 +121,7 @@ console.log('secrettt',clientsecret)
                  </div>
                  <div className='paymentmethod'>
                     <form onSubmit={submithandler}>
-                      <CardElement onChange={handlechange}/>
+                      <CardElement onChange={handlechange} className='cardelement'/>
 
                       <div className='paymentprice'>
                       <CurrencyFormat 

@@ -11,7 +11,7 @@ const promise = loadStripe('pk_test_51LQsMQSEZbNosnclAMiT76ev3dATx7wFX0yJc3iiULE
 
 function Paymentpage() {
   return (
-    <div>
+    <div >
         <Navbar/>
         <Elements stripe={promise}>
            <Payment/>

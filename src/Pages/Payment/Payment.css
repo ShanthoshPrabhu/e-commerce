@@ -38,6 +38,7 @@
     margin: 0px 20px;
     border-bottom: 1px solid black;
     padding: 20px;
+    
 }
 .address{
     flex: 0.2;
@@ -66,4 +67,40 @@
 .buynowbtn :active{
     background-color: rgb(211, 201, 50);
     color: black;
+}
+
+@media only screen and (max-width: 380px){
+    .payment{
+        width: 360px;
+        
+    }
+    .container{
+        width: 360px;
+        position: relative;
+        right: 100px;
+        
+    }
+    .title{
+        font-weight: 500;
+        font-size: 10px;
+    }
+    .deliveryaddress{
+        width: 260px;
+    }
+    .reviewitems{
+        width: 260px;
+    }
+    .paymentmethod{
+      width: 260px;
+      flex:1;
+      font-size: small;
+      
+    }
+    .cardelement{
+        font-size: 10px;
+    }
+    .container >h1{
+      font-weight: 500;
+      font-size: 14px;
+    }
 }
