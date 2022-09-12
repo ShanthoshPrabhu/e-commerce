@@ -18,6 +18,7 @@ const Slidercontainer =styled.div`
     ${mobile({ 
       width:'360px',
       height:'200px',
+      // display:'none'
     })}
 `
 const Arrow=styled.div`

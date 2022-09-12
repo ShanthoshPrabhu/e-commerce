@@ -15,7 +15,7 @@ code {
 }
 @media only screen and (max-width: 380px){
   body{
-   width: 360px;
+   max-width: 360px;
    /* background-color: rgb(43, 90, 129); */
   }
 }
