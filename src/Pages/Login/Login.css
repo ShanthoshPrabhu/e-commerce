@@ -73,3 +73,15 @@
     cursor: pointer;
     margin-left:20px ;
 }
+@media only screen and (max-width: 380px){
+    .logincontainer{
+        
+        padding:5px;
+    }
+    .login_logo{
+        font-size: 36px;
+        width: 200px;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+}
