@@ -54,24 +54,26 @@
 }
 .loginbutton{
     width: 90%;
-    background-color: rgb(240, 126, 65);
+    background-color: rgb(0, 0, 0);
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 10px;
     margin-top: 15px;
     cursor: pointer;
     margin-left:20px ;
+    color: rgb(211, 201, 50);
 }
 
 .registerbutton{
-    background-color: rgb(240, 126, 65);
+    background-color: rgb(0, 0, 0);
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 10px;
     margin-top: 15px;
     width: 90%;
     cursor: pointer;
     margin-left:20px ;
+    color: rgb(211, 201, 50);
 }
 @media only screen and (max-width: 380px){
     .logincontainer{

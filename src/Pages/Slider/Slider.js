@@ -18,7 +18,7 @@ const Slidercontainer =styled.div`
     ${mobile({ 
       width:'360px',
       height:'200px',
-      paddingLeft:'3px'
+      paddingLeft:'5px'
       // display:'none'
     })}
 `
