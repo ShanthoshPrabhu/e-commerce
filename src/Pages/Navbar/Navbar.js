@@ -20,7 +20,7 @@ const Container = styled.div`
      justifyContent: "center",
      alignItems:'center',
      paddingBottom:'20px',
-     paddingRight:'8px'
+     paddingRight:'18px'
   })}
 
 `

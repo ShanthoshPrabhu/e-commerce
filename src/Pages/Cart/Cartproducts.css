@@ -71,6 +71,8 @@
         flex-direction: column;
         height: 330px;
         padding: 10px 10px ;
+        position: relative;
+        left: 14px;
     }
     .cartproductimage{
         width: 50px;

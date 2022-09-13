@@ -106,6 +106,8 @@
         min-height: 300px;
        margin-bottom: 20px;
        padding-bottom: 30px;
+       position: relative;
+       left: 10px;
        
        /* background-color: red; */
     }
@@ -120,9 +122,7 @@
     .homeproductrating{
         font-size: 10px;
     }
-    .addtocart{
-     
-    }
+    
     .cartbtn{
         position: absolute;
         bottom: 20px;
