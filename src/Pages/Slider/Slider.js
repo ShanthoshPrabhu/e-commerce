@@ -78,7 +78,7 @@ const Slide = styled.div`
       width:'360px',
       height:'200px',
       top:'45px',
-      right:'0px',
+      right:'14px',
     
     })}
 `
