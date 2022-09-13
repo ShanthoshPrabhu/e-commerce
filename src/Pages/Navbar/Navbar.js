@@ -16,11 +16,11 @@ const Container = styled.div`
   width: 1514px;
   ${mobile({
      height:'80px',
-     width:'360px',
+     width:'380px',
      justifyContent: "center",
      alignItems:'center',
      paddingBottom:'20px',
-     paddingRight:'18px'
+     paddingRight:'20px',
   })}
 
 `

@@ -126,7 +126,7 @@
         top: 830px;
         display: flex;
         flex-direction:column ;
-      
+        left: 10px;
     }
     .leftcont{
         width: 330px;

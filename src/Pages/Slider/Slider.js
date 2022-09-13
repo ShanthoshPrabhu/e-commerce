@@ -19,6 +19,7 @@ const Slidercontainer =styled.div`
       width:'360px',
       height:'200px',
       paddingLeft:'16px',
+      paddingRight:'20px'
       // backgroundColor:'red'
       // display:'none'
     })}
