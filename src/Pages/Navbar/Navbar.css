@@ -26,7 +26,7 @@
   font-size: 22px;
 }
 
-@media only screen and (max-width:380px){
+@media only screen and (max-width:480px){
    .cartvalue{
     font-size: 12px;
     position: relative;

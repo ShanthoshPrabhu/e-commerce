@@ -13,7 +13,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-@media only screen and (max-width: 380px){
+@media only screen and (max-width: 480px){
   body{
    max-width: 360px;
    /* background-color: rgb(43, 90, 129); */

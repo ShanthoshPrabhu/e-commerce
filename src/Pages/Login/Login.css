@@ -75,7 +75,7 @@
     margin-left:20px ;
     color: rgb(211, 201, 50);
 }
-@media only screen and (max-width: 380px){
+@media only screen and (max-width: 480px){
     .logincontainer{
         
         padding:5px;

@@ -45,7 +45,7 @@
 .subtotal >p{
     padding-top: -20px;
 }
-@media only screen and (max-width: 380px){
+@media only screen and (max-width: 480px){
     .subtotal{
         width: 300px;
         position: absolute;
