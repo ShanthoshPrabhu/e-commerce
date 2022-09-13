@@ -18,6 +18,7 @@ const Slidercontainer =styled.div`
     ${mobile({ 
       width:'360px',
       height:'200px',
+      paddingLeft:'3px'
       // display:'none'
     })}
 `
@@ -50,7 +51,8 @@ ${mobile({
       top:'68px',
       width:'30px',
       height:'80px',
-      borderRadius:'3px'
+      borderRadius:'3px',
+      
     })}
 `
 const Wrapperslider=styled.div`
@@ -60,6 +62,7 @@ const Wrapperslider=styled.div`
    transform: translateX(${(props) => props.slideindex*-1514}px);
    ${mobile({ 
     transition: '1s ease',
+    
     //  transform: "translateX(${(props) => props.slideindex*-360}px)",
       // display:'flex'
     })}
@@ -75,7 +78,7 @@ const Slide = styled.div`
       width:'360px',
       height:'200px',
       top:'45px',
-      right:'20px',
+      right:'0px',
     
     })}
 `

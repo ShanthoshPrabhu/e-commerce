@@ -71,32 +71,34 @@
 
 @media only screen and (max-width: 380px){
     .payment{
-        width: 360px;
+        max-width: 360px;
         
     }
     .container{
         width: 360px;
         position: relative;
-        right: 150px;
+        right: 140px;
         
     }
     .title{
         font-weight: 500;
-        font-size: 10px;
+        font-size: 12px;
     }
     .deliveryaddress{
-        width: 260px;
+        width: 328px;
+        padding-left: 0;
     }
     .reviewitems{
-        width: 260px;
+        width: 328px;
         display: flex;
         flex-direction: column;
+        padding-left: 0;
     }
     .paymentmethod{
-      width: 260px;
+      min-width: 280px;
       flex:1;
       font-size: small;
-      
+      margin-left: 10px;
     }
     .cardelement{
         font-size: 10px;
@@ -104,5 +106,7 @@
     .container >h1{
       font-weight: 500;
       font-size: 14px;
+      position: relative;
+      right: 400px;
     }
 }

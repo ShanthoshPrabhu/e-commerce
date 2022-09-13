@@ -20,6 +20,7 @@ const Container = styled.div`
      justifyContent: "center",
      alignItems:'center',
      paddingBottom:'20px',
+     paddingRight:'8px'
   })}
 
 `
@@ -30,7 +31,8 @@ const Wrapper = styled.div`
      
      ${mobile({
        position:'relative',
-       right:'20px'
+       padding:'0',
+       top:'10px'
      })}
 `
 const Input= styled.input`
@@ -43,6 +45,7 @@ const Input= styled.input`
     display:'flex',
     fontSize:'1px',
     width:'20px',
+    
   })}
 `
 
@@ -52,27 +55,27 @@ const Left = styled.div`
   align-items:center;
   justify-content: center;
   ${mobile({
-      width:'120px',
+      width:'150px',
       justifyContent: "center",
       position:'relative',
-      right:'30px',
-      top:'8px'
+      top:'8px',
+      
      })}
 `
 const Middle = styled.div`
   flex: 1;
-  ${mobile({ flex: 1, 
+  ${mobile({width:'70px', 
   display:'flex',
   justifyContent: "center" ,
-  alignItems:'center'
+  alignItems:'center',
   })}
 `
 const Right = styled.div`
   flex: 1;
   ${mobile({ 
-    flex: 2,
+    width:'60px',
     display:'flex',
-    justifyContent: "center" ,
+    justifyContent: "center",
     alignItems:'center'
    })}
 `
@@ -97,6 +100,8 @@ const Searchcontainer=styled.div`
       position:'relative',
       height:'0px',
       top:'10px',
+      minWidth:'180px',
+      marginLeft:'0',
       left:'40px'
   })}
 `
@@ -111,14 +116,16 @@ const Logo=styled.h1`
    margin-top:12px;
    min-width: 420px;
    ${mobile({ 
-    fontSize: "26px",
+    fontSize: "24px",
     display:'flex',
     justifyContent: "center" ,
     alignItems:'center',
-    position:'relative',
-    right:'325px',
-    bottom:'24px',
-    color:'red'
+    position:'absolute',
+    right:'265px',
+    bottom:'40px',
+    color:'red',
+    minWidth:'70px',
+    fontWeight:'1500'
     // paddingBottom:'10px'
      })}
 `
@@ -132,8 +139,9 @@ const Items=styled.div`
    position: relative;
    ${mobile({ 
     position:'relative',
-      right:'400px',
-      fontSize:'12px'
+      width: '60px',
+      fontSize:'12px',
+    
     })}
 `
 const Login=styled.button`
@@ -146,15 +154,15 @@ const Login=styled.button`
    border: none;
    margin: none;
    ${mobile({
-    width:'80px', 
+    width:'60px', 
     display:'flex',
     alignItems:'center',
     justifyContent: "center" ,
     marginTop:'24px',
     textDecoration:'none',
     position:'relative',
-    fontSize:'13px',
-    bottom:'20px'
+    fontSize:'14px',
+    left:'80px',
   })}
 `
 const Signup=styled.button`
@@ -169,11 +177,11 @@ const Signup=styled.button`
    ${mobile({ 
     display:'flex',
     position:'relative',
-    fontSize:'14px',
-    bottom:'44px',
+    fontSize:'12px',
     left:'60px',
     textDecoration:'none',
-    color:'red'
+    color:'red',
+    display:'none'
   })}
 `
 
@@ -189,8 +197,8 @@ const Cartcoloumn=styled.button`
   ${mobile({ 
     position:'relative',
     fontSize:'8px',
-    right:'64px',
-    top:'14px'
+    bottom: '30px',
+    left:'80px'
     })}
 `
 
@@ -198,7 +206,8 @@ const Text=styled.div`
    font-size:18px; 
    margin-top:2px;
    ${mobile({ 
-    display:'none'
+    display:'none',
+    fontSize:'14px'
     })}
 `
 const Orderscoloumn=styled.div`
@@ -208,7 +217,9 @@ const Orderscoloumn=styled.div`
    ${mobile({ 
     position:'relative',
     fontSize:'14px',
-
+     left:'100px',
+     paddingLeft:'12px',
+     bottom:'5.5px'
   })}
 `
 
@@ -245,7 +256,7 @@ function Navbar () {
         <Items>
            <Link to={!user && '/login'} className='link'>
               <Login onClick={handlelogin}>{user ? 'Log out' : 'Log in'}</Login>
-           
+               
               <Signup>{user ? '' : 'Sign up'}</Signup>
             </Link>
             <Link to="/Cartz" className='link'>
