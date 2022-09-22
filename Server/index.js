@@ -6,7 +6,7 @@ require('dotenv').config();
 const stripe= require("stripe")('sk_test_51LQsMQSEZbNosnclVoiLIRCpRhQDJ74gB7ys7lWn8U4hvjctvnazqaFYpbzCiW7MxlItBRPRpb5nKc03oar5aZfR00HEQ8IsQ3')
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1:27017/ecommerce');
+mongoose.connect('mongodb+srv://ShanthoshPrabhu:shanthosh30@products.ginq3st.mongodb.net/?retryWrites=true&w=majority');
 
 
 const User = new mongoose.Schema({
