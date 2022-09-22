@@ -19,11 +19,11 @@ function App() {
   
    
   // useEffect(()=>{
-  //   
-  //   // dispatch({
-  //   //   type:'User',
-  //   //   user: JSON.parse(localStorage.getItem('user'))
-  //   // })
+    
+  //   dispatch({
+  //     type:'User',
+  //     user: JSON.parse(localStorage.getItem('user'))
+  //   })
     
   // },[user])
   

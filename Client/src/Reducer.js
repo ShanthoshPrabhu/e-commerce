@@ -1,7 +1,7 @@
  export const initialstate = {
     basket:[],
-    user:JSON.parse(localStorage.getItem('user')) || null,
-    
+    // user:JSON.parse(localStorage.getItem('user')) || null,
+    user:[]
  };
 
 export const basketTotal = (basket) => basket?.reduce((amount,item) => item.price + amount ,0) 

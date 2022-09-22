@@ -21,13 +21,16 @@ function Login() {
         password:password
       })
       console.log(response.data)
-      localStorage.setItem('user',JSON.stringify(response.data))
-      
+      // localStorage.setItem('user',JSON.stringify(response.data))
+      dispatch({
+        type:'User',
+        user: response.data
+      })
       
     } catch (err){
       console.log(err)
     }
-   
+   console.log('hdh',user)
     navigate('/')
     window.location.reload()
   }

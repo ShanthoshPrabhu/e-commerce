@@ -231,7 +231,6 @@ function Navbar () {
       type:'User',
       user: null
     })
-    localStorage.removeItem('user')
   }
   
   const finay = () => {
