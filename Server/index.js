@@ -1,7 +1,7 @@
 const express=require('express');
 const cors = require('cors');
 const bcrypt =require('bcrypt')
-
+require('dotenv').config();
 const stripe= require("stripe")('sk_test_51LQsMQSEZbNosnclVoiLIRCpRhQDJ74gB7ys7lWn8U4hvjctvnazqaFYpbzCiW7MxlItBRPRpb5nKc03oar5aZfR00HEQ8IsQ3')
 
 const mongoose = require('mongoose');
@@ -110,4 +110,4 @@ app.post('/auth/signup',async function(req,res){
 })
 // app.use('/Server/auth',authRoute)
 
-app.listen(2001)
+app.listen(process.env.PORT || 2001)
