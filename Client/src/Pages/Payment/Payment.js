@@ -36,7 +36,6 @@ useEffect(()=>{
    setclientsecrent(response.data.clientsecret)
 
   }
-  console.log(user._id)
 
   getclientsecret()
 },[basket])

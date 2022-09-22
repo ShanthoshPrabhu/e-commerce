@@ -1,7 +1,8 @@
 const express=require('express');
 const cors = require('cors');
 const bcrypt =require('bcrypt')
-
+const path = require('path')
+require('dotenv').config();
 const stripe= require("stripe")('sk_test_51LQsMQSEZbNosnclVoiLIRCpRhQDJ74gB7ys7lWn8U4hvjctvnazqaFYpbzCiW7MxlItBRPRpb5nKc03oar5aZfR00HEQ8IsQ3')
 
 const mongoose = require('mongoose');
@@ -32,6 +33,9 @@ module.exports = pproducts
 const app=express();
 app.use(cors());
 app.use(express.json());
+
+app.use(express.static(path.join(__dirname,'../Client/build')))
+
 
 app.get('/',function(req,res){
     res.send('Hello there')
@@ -110,4 +114,4 @@ app.post('/auth/signup',async function(req,res){
 })
 // app.use('/Server/auth',authRoute)
 
-app.listen(2001)
+app.listen(process.env.PORT || 2001)

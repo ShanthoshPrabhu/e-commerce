@@ -21,11 +21,14 @@ function Login() {
         password:password
       })
       console.log(response.data)
+
       // localStorage.setItem('user',JSON.stringify(response.data))
       dispatch({
         type:'User',
         user: response.data
       })
+      localStorage.setItem('user',JSON.stringify(response.data))
+
       
     } catch (err){
       console.log(err)
