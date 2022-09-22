@@ -229,7 +229,7 @@ function Navbar () {
   const handlelogin = () => {
     dispatch({
       type:'User',
-      user: null
+      user:[]
     })
   }
   
