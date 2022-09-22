@@ -26,7 +26,7 @@ function App() {
     })
     
   },[])
-  
+  console.log('uhuihuk',user)
   return (
     <Router>
       

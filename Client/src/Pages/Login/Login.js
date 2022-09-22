@@ -23,7 +23,6 @@ function Login() {
       console.log(response.data)
       localStorage.setItem('user',JSON.stringify(response.data))
       
-      
     } catch (err){
       console.log(err)
     }
