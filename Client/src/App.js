@@ -18,14 +18,14 @@ function App() {
   const [{user},dispatch] = useStateValue();
   
    
-  // useEffect(()=>{
-  //   
-  //   // dispatch({
-  //   //   type:'User',
-  //   //   user: JSON.parse(localStorage.getItem('user'))
-  //   // })
+  useEffect(()=>{
     
-  // },[user])
+    dispatch({
+      type:'User',
+      user: JSON.parse(localStorage.getItem('user'))
+    })
+    
+  },[])
   
   return (
     <Router>

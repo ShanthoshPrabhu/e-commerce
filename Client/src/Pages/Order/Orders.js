@@ -17,7 +17,7 @@ function Orders() {
     if(user){
         
         const getproducts = async() =>{
-            const products =await axios.get(`http://localhost:2001/products/${user._id}`)
+            const products =await axios.get(`http://localhost:2002/products/${user._id}`)
             
             setorders(products.data)
         }

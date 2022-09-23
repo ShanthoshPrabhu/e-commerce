@@ -19,7 +19,7 @@ function Signup() {
       password,
     }
     console.log(body)
-    const response=await axios.post('http://localhost:2001/auth/signup',body)
+    const response=await axios.post('http://localhost:2002/auth/signup',body)
       
     window.location.reload();
       navigate('/')

@@ -30,7 +30,7 @@ useEffect(()=>{
     
    const response= await axios({
      method:'post',
-     url:`http://localhost:2001/payments/create?total=${basketTotal(basket)*100}`
+     url:`http://localhost:2002/payments/create?total=${basketTotal(basket)*100}`
    })  ;
 
    setclientsecrent(response.data.clientsecret)
@@ -60,7 +60,7 @@ console.log('secrettt',clientsecret)
         created:paymentIntent.created,
       }
       console.log('jj',productsordered)
-      const Products = axios.post(`http://localhost:2001/products/${user._id}`,productsordered)
+      const Products = axios.post(`http://localhost:2002/products/${user._id}`,productsordered)
 
       setsucceeded(true);
       seterror(null);

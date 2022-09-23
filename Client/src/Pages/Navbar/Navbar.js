@@ -225,13 +225,13 @@ const Orderscoloumn=styled.div`
 function Navbar () {
 
   const[{basket,user},dispatch] = useStateValue();
-
+  console.log(user)
   const handlelogin = () => {
     dispatch({
       type:'User',
-      user:[]
+      user:null
     })
-    localStorage.removeItem('user')
+    
   }
   
   const finay = () => {

@@ -6,7 +6,12 @@ require('dotenv').config();
 const stripe= require("stripe")('sk_test_51LQsMQSEZbNosnclVoiLIRCpRhQDJ74gB7ys7lWn8U4hvjctvnazqaFYpbzCiW7MxlItBRPRpb5nKc03oar5aZfR00HEQ8IsQ3')
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://ShanthoshPrabhu:shanthosh30@products.ginq3st.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect(process.env.ATLAS_URI)
+.then(()=>{
+  console.log('Sucesss')
+})
+.catch(err=>console.log(err));
+
 
 
 const User = new mongoose.Schema({
@@ -34,7 +39,7 @@ const app=express();
 app.use(cors());
 app.use(express.json());
 
-app.use(express.static(path.join(__dirname,'../Client/build')))
+// app.use(express.static(path.join(__dirname,'../Client/build')))
 
 
 app.get('/',function(req,res){

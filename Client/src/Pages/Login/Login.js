@@ -16,19 +16,20 @@ function Login() {
     e.preventDefault();
     
     try{
-      const response=await axios.post('http://localhost:2001/auth/login',{
+      const response=await axios.post('http://localhost:2002/auth/login',{
         email:email,
         password:password
       })
       console.log(response.data)
 
       // localStorage.setItem('user',JSON.stringify(response.data))
+      
+      console.log(response)
+      localStorage.setItem('user',JSON.stringify(response.data))
       dispatch({
         type:'User',
         user: response.data
       })
-      localStorage.setItem('user',JSON.stringify(response.data))
-
       
     } catch (err){
       console.log(err)
